@@ -1,0 +1,474 @@
+The system is: FreeBSD - 14.0-CURRENT - aarch64c
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: -mabi=aapcs
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is Clang, found in "/home/aj658/LLVM_passes/build/CMakeFiles/3.24.0/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: -mabi=aapcs
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is Clang, found in "/home/aj658/LLVM_passes/build/CMakeFiles/3.24.0/CompilerIdCXX/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/aj658/LLVM_passes/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/gmake -f Makefile cmTC_b4107/fast && /usr/local/bin/gmake  -f CMakeFiles/cmTC_b4107.dir/build.make CMakeFiles/cmTC_b4107.dir/build
+gmake[1]: Entering directory '/usr/home/aj658/LLVM_passes/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b4107.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -mabi=aapcs    -v -MD -MT CMakeFiles/cmTC_b4107.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_b4107.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_b4107.dir/CMakeCCompilerABI.c.o -c /usr/local64/share/cmake/Modules/CMakeCCompilerABI.c
+clang version 13.0.0
+Target: aarch64-unknown-freebsd14.0
+Thread model: posix
+InstalledDir: /usr/local64/llvm-morello/bin
+ (in-process)
+ "/usr/local64/llvm-morello/bin/clang-13" -cc1 -triple aarch64-unknown-freebsd14.0 -emit-obj -mrelax-all --mrelax-relocations -disable-free -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mframe-pointer=non-leaf -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu generic -target-feature +neon -target-feature +v8.2a -target-feature +fp-armv8 -target-feature +dotprod -target-feature +fullfp16 -target-feature +spe -target-feature +ssbs -target-feature +rcpc -target-feature +morello -target-feature -c64 -target-abi aapcs -mllvm -cheri-cap-table-abi=pcrel -fallow-half-arguments-and-returns -debugger-tuning=gdb -v -fcoverage-compilation-dir=/usr/home/aj658/LLVM_passes/build/CMakeFiles/CMakeTmp -resource-dir /usr/local64/llvm-morello/lib/clang/13.0.0 -dependency-file CMakeFiles/cmTC_b4107.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_b4107.dir/CMakeCCompilerABI.c.o -sys-header-deps -fdebug-compilation-dir=/usr/home/aj658/LLVM_passes/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -morello-vararg=new -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_b4107.dir/CMakeCCompilerABI.c.o -x c /usr/local64/share/cmake/Modules/CMakeCCompilerABI.c
+clang -cc1 version 13.0.0 based upon LLVM 13.0.0git default target aarch64-unknown-freebsd14.0
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/local64/llvm-morello/lib/clang/13.0.0/include
+ /usr/include
+End of search list.
+Linking C executable cmTC_b4107
+/usr/local64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b4107.dir/link.txt --verbose=1
+/usr/bin/cc -mabi=aapcs   -v CMakeFiles/cmTC_b4107.dir/CMakeCCompilerABI.c.o -o cmTC_b4107 
+clang version 13.0.0
+Target: aarch64-unknown-freebsd14.0
+Thread model: posix
+InstalledDir: /usr/local64/llvm-morello/bin
+ "/usr/local64/llvm-morello/bin/ld" --eh-frame-hdr -dynamic-linker /libexec/ld-elf.so.1 --enable-new-dtags -o cmTC_b4107 /usr/lib64/crt1.o /usr/lib64/crti.o /usr/lib64/crtbegin.o -L/usr/lib64 CMakeFiles/cmTC_b4107.dir/CMakeCCompilerABI.c.o --start-group -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed --end-group /usr/lib64/crtend.o /usr/lib64/crtn.o
+gmake[1]: Leaving directory '/usr/home/aj658/LLVM_passes/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/local64/llvm-morello/lib/clang/13.0.0/include]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/local64/llvm-morello/lib/clang/13.0.0/include] ==> [/usr/local64/llvm-morello/lib/clang/13.0.0/include]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/local64/llvm-morello/lib/clang/13.0.0/include;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/aj658/LLVM_passes/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/local/bin/gmake -f Makefile cmTC_b4107/fast && /usr/local/bin/gmake  -f CMakeFiles/cmTC_b4107.dir/build.make CMakeFiles/cmTC_b4107.dir/build]
+  ignore line: [gmake[1]: Entering directory '/usr/home/aj658/LLVM_passes/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_b4107.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -mabi=aapcs    -v -MD -MT CMakeFiles/cmTC_b4107.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_b4107.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_b4107.dir/CMakeCCompilerABI.c.o -c /usr/local64/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [clang version 13.0.0]
+  ignore line: [Target: aarch64-unknown-freebsd14.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /usr/local64/llvm-morello/bin]
+  ignore line: [ (in-process)]
+  ignore line: [ "/usr/local64/llvm-morello/bin/clang-13" -cc1 -triple aarch64-unknown-freebsd14.0 -emit-obj -mrelax-all --mrelax-relocations -disable-free -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mframe-pointer=non-leaf -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu generic -target-feature +neon -target-feature +v8.2a -target-feature +fp-armv8 -target-feature +dotprod -target-feature +fullfp16 -target-feature +spe -target-feature +ssbs -target-feature +rcpc -target-feature +morello -target-feature -c64 -target-abi aapcs -mllvm -cheri-cap-table-abi=pcrel -fallow-half-arguments-and-returns -debugger-tuning=gdb -v -fcoverage-compilation-dir=/usr/home/aj658/LLVM_passes/build/CMakeFiles/CMakeTmp -resource-dir /usr/local64/llvm-morello/lib/clang/13.0.0 -dependency-file CMakeFiles/cmTC_b4107.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_b4107.dir/CMakeCCompilerABI.c.o -sys-header-deps -fdebug-compilation-dir=/usr/home/aj658/LLVM_passes/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -morello-vararg=new -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_b4107.dir/CMakeCCompilerABI.c.o -x c /usr/local64/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [clang -cc1 version 13.0.0 based upon LLVM 13.0.0git default target aarch64-unknown-freebsd14.0]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/local64/llvm-morello/lib/clang/13.0.0/include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [Linking C executable cmTC_b4107]
+  ignore line: [/usr/local64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b4107.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc -mabi=aapcs   -v CMakeFiles/cmTC_b4107.dir/CMakeCCompilerABI.c.o -o cmTC_b4107 ]
+  ignore line: [clang version 13.0.0]
+  ignore line: [Target: aarch64-unknown-freebsd14.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /usr/local64/llvm-morello/bin]
+  link line: [ "/usr/local64/llvm-morello/bin/ld" --eh-frame-hdr -dynamic-linker /libexec/ld-elf.so.1 --enable-new-dtags -o cmTC_b4107 /usr/lib64/crt1.o /usr/lib64/crti.o /usr/lib64/crtbegin.o -L/usr/lib64 CMakeFiles/cmTC_b4107.dir/CMakeCCompilerABI.c.o --start-group -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed --end-group /usr/lib64/crtend.o /usr/lib64/crtn.o]
+    arg [/usr/local64/llvm-morello/bin/ld] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/libexec/ld-elf.so.1] ==> ignore
+    arg [--enable-new-dtags] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_b4107] ==> ignore
+    arg [/usr/lib64/crt1.o] ==> obj [/usr/lib64/crt1.o]
+    arg [/usr/lib64/crti.o] ==> obj [/usr/lib64/crti.o]
+    arg [/usr/lib64/crtbegin.o] ==> obj [/usr/lib64/crtbegin.o]
+    arg [-L/usr/lib64] ==> dir [/usr/lib64]
+    arg [CMakeFiles/cmTC_b4107.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [--start-group] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [--end-group] ==> ignore
+    arg [/usr/lib64/crtend.o] ==> obj [/usr/lib64/crtend.o]
+    arg [/usr/lib64/crtn.o] ==> obj [/usr/lib64/crtn.o]
+  collapse library dir [/usr/lib64] ==> [/usr/lib64]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib64/crtbegin.o;/usr/lib64/crtend.o;/usr/lib64/crtn.o]
+  implicit dirs: [/usr/lib64]
+  implicit fwks: []
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/aj658/LLVM_passes/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/gmake -f Makefile cmTC_bebe1/fast && /usr/local/bin/gmake  -f CMakeFiles/cmTC_bebe1.dir/build.make CMakeFiles/cmTC_bebe1.dir/build
+gmake[1]: Entering directory '/usr/home/aj658/LLVM_passes/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bebe1.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++   -mabi=aapcs    -v -MD -MT CMakeFiles/cmTC_bebe1.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_bebe1.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_bebe1.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local64/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+clang version 13.0.0
+Target: aarch64-unknown-freebsd14.0
+Thread model: posix
+InstalledDir: /usr/local64/llvm-morello/bin
+ (in-process)
+ "/usr/local64/llvm-morello/bin/clang-13" -cc1 -triple aarch64-unknown-freebsd14.0 -emit-obj -mrelax-all --mrelax-relocations -disable-free -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mframe-pointer=non-leaf -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu generic -target-feature +neon -target-feature +v8.2a -target-feature +fp-armv8 -target-feature +dotprod -target-feature +fullfp16 -target-feature +spe -target-feature +ssbs -target-feature +rcpc -target-feature +morello -target-feature -c64 -target-abi aapcs -mllvm -cheri-cap-table-abi=pcrel -fallow-half-arguments-and-returns -debugger-tuning=gdb -v -fcoverage-compilation-dir=/usr/home/aj658/LLVM_passes/build/CMakeFiles/CMakeTmp -resource-dir /usr/local64/llvm-morello/lib/clang/13.0.0 -dependency-file CMakeFiles/cmTC_bebe1.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_bebe1.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/include/c++/v1 -fdeprecated-macro -fdebug-compilation-dir=/usr/home/aj658/LLVM_passes/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -morello-vararg=new -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_bebe1.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local64/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 13.0.0 based upon LLVM 13.0.0git default target aarch64-unknown-freebsd14.0
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/include/c++/v1
+ /usr/local64/llvm-morello/lib/clang/13.0.0/include
+ /usr/include
+End of search list.
+Linking CXX executable cmTC_bebe1
+/usr/local64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bebe1.dir/link.txt --verbose=1
+/usr/bin/c++ -mabi=aapcs   -v CMakeFiles/cmTC_bebe1.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_bebe1 
+clang version 13.0.0
+Target: aarch64-unknown-freebsd14.0
+Thread model: posix
+InstalledDir: /usr/local64/llvm-morello/bin
+ "/usr/local64/llvm-morello/bin/ld" --eh-frame-hdr -dynamic-linker /libexec/ld-elf.so.1 --enable-new-dtags -o cmTC_bebe1 /usr/lib64/crt1.o /usr/lib64/crti.o /usr/lib64/crtbegin.o -L/usr/lib64 CMakeFiles/cmTC_bebe1.dir/CMakeCXXCompilerABI.cpp.o --start-group -lc++ -lm -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed --end-group /usr/lib64/crtend.o /usr/lib64/crtn.o
+gmake[1]: Leaving directory '/usr/home/aj658/LLVM_passes/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/include/c++/v1]
+    add: [/usr/local64/llvm-morello/lib/clang/13.0.0/include]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/include/c++/v1] ==> [/usr/include/c++/v1]
+  collapse include dir [/usr/local64/llvm-morello/lib/clang/13.0.0/include] ==> [/usr/local64/llvm-morello/lib/clang/13.0.0/include]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/include/c++/v1;/usr/local64/llvm-morello/lib/clang/13.0.0/include;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/aj658/LLVM_passes/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/local/bin/gmake -f Makefile cmTC_bebe1/fast && /usr/local/bin/gmake  -f CMakeFiles/cmTC_bebe1.dir/build.make CMakeFiles/cmTC_bebe1.dir/build]
+  ignore line: [gmake[1]: Entering directory '/usr/home/aj658/LLVM_passes/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_bebe1.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++   -mabi=aapcs    -v -MD -MT CMakeFiles/cmTC_bebe1.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_bebe1.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_bebe1.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local64/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [clang version 13.0.0]
+  ignore line: [Target: aarch64-unknown-freebsd14.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /usr/local64/llvm-morello/bin]
+  ignore line: [ (in-process)]
+  ignore line: [ "/usr/local64/llvm-morello/bin/clang-13" -cc1 -triple aarch64-unknown-freebsd14.0 -emit-obj -mrelax-all --mrelax-relocations -disable-free -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mframe-pointer=non-leaf -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu generic -target-feature +neon -target-feature +v8.2a -target-feature +fp-armv8 -target-feature +dotprod -target-feature +fullfp16 -target-feature +spe -target-feature +ssbs -target-feature +rcpc -target-feature +morello -target-feature -c64 -target-abi aapcs -mllvm -cheri-cap-table-abi=pcrel -fallow-half-arguments-and-returns -debugger-tuning=gdb -v -fcoverage-compilation-dir=/usr/home/aj658/LLVM_passes/build/CMakeFiles/CMakeTmp -resource-dir /usr/local64/llvm-morello/lib/clang/13.0.0 -dependency-file CMakeFiles/cmTC_bebe1.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_bebe1.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/include/c++/v1 -fdeprecated-macro -fdebug-compilation-dir=/usr/home/aj658/LLVM_passes/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -morello-vararg=new -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_bebe1.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local64/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [clang -cc1 version 13.0.0 based upon LLVM 13.0.0git default target aarch64-unknown-freebsd14.0]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/include/c++/v1]
+  ignore line: [ /usr/local64/llvm-morello/lib/clang/13.0.0/include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [Linking CXX executable cmTC_bebe1]
+  ignore line: [/usr/local64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bebe1.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++ -mabi=aapcs   -v CMakeFiles/cmTC_bebe1.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_bebe1 ]
+  ignore line: [clang version 13.0.0]
+  ignore line: [Target: aarch64-unknown-freebsd14.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /usr/local64/llvm-morello/bin]
+  link line: [ "/usr/local64/llvm-morello/bin/ld" --eh-frame-hdr -dynamic-linker /libexec/ld-elf.so.1 --enable-new-dtags -o cmTC_bebe1 /usr/lib64/crt1.o /usr/lib64/crti.o /usr/lib64/crtbegin.o -L/usr/lib64 CMakeFiles/cmTC_bebe1.dir/CMakeCXXCompilerABI.cpp.o --start-group -lc++ -lm -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed --end-group /usr/lib64/crtend.o /usr/lib64/crtn.o]
+    arg [/usr/local64/llvm-morello/bin/ld] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/libexec/ld-elf.so.1] ==> ignore
+    arg [--enable-new-dtags] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_bebe1] ==> ignore
+    arg [/usr/lib64/crt1.o] ==> obj [/usr/lib64/crt1.o]
+    arg [/usr/lib64/crti.o] ==> obj [/usr/lib64/crti.o]
+    arg [/usr/lib64/crtbegin.o] ==> obj [/usr/lib64/crtbegin.o]
+    arg [-L/usr/lib64] ==> dir [/usr/lib64]
+    arg [CMakeFiles/cmTC_bebe1.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [--start-group] ==> ignore
+    arg [-lc++] ==> lib [c++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [--end-group] ==> ignore
+    arg [/usr/lib64/crtend.o] ==> obj [/usr/lib64/crtend.o]
+    arg [/usr/lib64/crtn.o] ==> obj [/usr/lib64/crtn.o]
+  collapse library dir [/usr/lib64] ==> [/usr/lib64]
+  implicit libs: [c++;m;gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib64/crtbegin.o;/usr/lib64/crtend.o;/usr/lib64/crtn.o]
+  implicit dirs: [/usr/lib64]
+  implicit fwks: []
+
+
+The system is: FreeBSD - 14.0-CURRENT - aarch64c
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: -mabi=aapcs
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is Clang, found in "/home/aj658/LLVM_passes_new/LLVM_passes/build/CMakeFiles/3.22.2/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: -mabi=aapcs
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is Clang, found in "/home/aj658/LLVM_passes_new/LLVM_passes/build/CMakeFiles/3.22.2/CompilerIdCXX/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/aj658/LLVM_passes_new/LLVM_passes/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local64/bin/gmake -f Makefile cmTC_7143c/fast && /usr/local64/bin/gmake  -f CMakeFiles/cmTC_7143c.dir/build.make CMakeFiles/cmTC_7143c.dir/build
+gmake[1]: Entering directory '/usr/home/aj658/LLVM_passes_new/LLVM_passes/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7143c.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -mabi=aapcs    -v -MD -MT CMakeFiles/cmTC_7143c.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_7143c.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_7143c.dir/CMakeCCompilerABI.c.o -c /usr/local64/share/cmake/Modules/CMakeCCompilerABI.c
+clang version 13.0.0
+Target: aarch64-unknown-freebsd14.0
+Thread model: posix
+InstalledDir: /usr/local64/llvm-morello/bin
+ (in-process)
+ "/usr/local64/llvm-morello/bin/clang-13" -cc1 -triple aarch64-unknown-freebsd14.0 -emit-obj -mrelax-all --mrelax-relocations -disable-free -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mframe-pointer=non-leaf -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu generic -target-feature +neon -target-feature +v8.2a -target-feature +fp-armv8 -target-feature +dotprod -target-feature +fullfp16 -target-feature +spe -target-feature +ssbs -target-feature +rcpc -target-feature +morello -target-feature -c64 -target-abi aapcs -mllvm -cheri-cap-table-abi=pcrel -fallow-half-arguments-and-returns -debugger-tuning=gdb -v -fcoverage-compilation-dir=/usr/home/aj658/LLVM_passes_new/LLVM_passes/build/CMakeFiles/CMakeTmp -resource-dir /usr/local64/llvm-morello/lib/clang/13.0.0 -dependency-file CMakeFiles/cmTC_7143c.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_7143c.dir/CMakeCCompilerABI.c.o -sys-header-deps -fdebug-compilation-dir=/usr/home/aj658/LLVM_passes_new/LLVM_passes/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -morello-vararg=new -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_7143c.dir/CMakeCCompilerABI.c.o -x c /usr/local64/share/cmake/Modules/CMakeCCompilerABI.c
+clang -cc1 version 13.0.0 based upon LLVM 13.0.0git default target aarch64-unknown-freebsd14.0
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/local64/llvm-morello/lib/clang/13.0.0/include
+ /usr/include
+End of search list.
+Linking C executable cmTC_7143c
+/usr/local64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7143c.dir/link.txt --verbose=1
+/usr/bin/cc -mabi=aapcs   -v CMakeFiles/cmTC_7143c.dir/CMakeCCompilerABI.c.o -o cmTC_7143c 
+clang version 13.0.0
+Target: aarch64-unknown-freebsd14.0
+Thread model: posix
+InstalledDir: /usr/local64/llvm-morello/bin
+ "/usr/local64/llvm-morello/bin/ld" --eh-frame-hdr -dynamic-linker /libexec/ld-elf.so.1 --enable-new-dtags -o cmTC_7143c /usr/lib64/crt1.o /usr/lib64/crti.o /usr/lib64/crtbegin.o -L/usr/lib64 CMakeFiles/cmTC_7143c.dir/CMakeCCompilerABI.c.o --start-group -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed --end-group /usr/lib64/crtend.o /usr/lib64/crtn.o
+gmake[1]: Leaving directory '/usr/home/aj658/LLVM_passes_new/LLVM_passes/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/local64/llvm-morello/lib/clang/13.0.0/include]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/local64/llvm-morello/lib/clang/13.0.0/include] ==> [/usr/local64/llvm-morello/lib/clang/13.0.0/include]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/local64/llvm-morello/lib/clang/13.0.0/include;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/aj658/LLVM_passes_new/LLVM_passes/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/local64/bin/gmake -f Makefile cmTC_7143c/fast && /usr/local64/bin/gmake  -f CMakeFiles/cmTC_7143c.dir/build.make CMakeFiles/cmTC_7143c.dir/build]
+  ignore line: [gmake[1]: Entering directory '/usr/home/aj658/LLVM_passes_new/LLVM_passes/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_7143c.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -mabi=aapcs    -v -MD -MT CMakeFiles/cmTC_7143c.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_7143c.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_7143c.dir/CMakeCCompilerABI.c.o -c /usr/local64/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [clang version 13.0.0]
+  ignore line: [Target: aarch64-unknown-freebsd14.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /usr/local64/llvm-morello/bin]
+  ignore line: [ (in-process)]
+  ignore line: [ "/usr/local64/llvm-morello/bin/clang-13" -cc1 -triple aarch64-unknown-freebsd14.0 -emit-obj -mrelax-all --mrelax-relocations -disable-free -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mframe-pointer=non-leaf -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu generic -target-feature +neon -target-feature +v8.2a -target-feature +fp-armv8 -target-feature +dotprod -target-feature +fullfp16 -target-feature +spe -target-feature +ssbs -target-feature +rcpc -target-feature +morello -target-feature -c64 -target-abi aapcs -mllvm -cheri-cap-table-abi=pcrel -fallow-half-arguments-and-returns -debugger-tuning=gdb -v -fcoverage-compilation-dir=/usr/home/aj658/LLVM_passes_new/LLVM_passes/build/CMakeFiles/CMakeTmp -resource-dir /usr/local64/llvm-morello/lib/clang/13.0.0 -dependency-file CMakeFiles/cmTC_7143c.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_7143c.dir/CMakeCCompilerABI.c.o -sys-header-deps -fdebug-compilation-dir=/usr/home/aj658/LLVM_passes_new/LLVM_passes/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -morello-vararg=new -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_7143c.dir/CMakeCCompilerABI.c.o -x c /usr/local64/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [clang -cc1 version 13.0.0 based upon LLVM 13.0.0git default target aarch64-unknown-freebsd14.0]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/local64/llvm-morello/lib/clang/13.0.0/include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [Linking C executable cmTC_7143c]
+  ignore line: [/usr/local64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7143c.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc -mabi=aapcs   -v CMakeFiles/cmTC_7143c.dir/CMakeCCompilerABI.c.o -o cmTC_7143c ]
+  ignore line: [clang version 13.0.0]
+  ignore line: [Target: aarch64-unknown-freebsd14.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /usr/local64/llvm-morello/bin]
+  link line: [ "/usr/local64/llvm-morello/bin/ld" --eh-frame-hdr -dynamic-linker /libexec/ld-elf.so.1 --enable-new-dtags -o cmTC_7143c /usr/lib64/crt1.o /usr/lib64/crti.o /usr/lib64/crtbegin.o -L/usr/lib64 CMakeFiles/cmTC_7143c.dir/CMakeCCompilerABI.c.o --start-group -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed --end-group /usr/lib64/crtend.o /usr/lib64/crtn.o]
+    arg [/usr/local64/llvm-morello/bin/ld] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/libexec/ld-elf.so.1] ==> ignore
+    arg [--enable-new-dtags] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_7143c] ==> ignore
+    arg [/usr/lib64/crt1.o] ==> obj [/usr/lib64/crt1.o]
+    arg [/usr/lib64/crti.o] ==> obj [/usr/lib64/crti.o]
+    arg [/usr/lib64/crtbegin.o] ==> obj [/usr/lib64/crtbegin.o]
+    arg [-L/usr/lib64] ==> dir [/usr/lib64]
+    arg [CMakeFiles/cmTC_7143c.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [--start-group] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [--end-group] ==> ignore
+    arg [/usr/lib64/crtend.o] ==> obj [/usr/lib64/crtend.o]
+    arg [/usr/lib64/crtn.o] ==> obj [/usr/lib64/crtn.o]
+  collapse library dir [/usr/lib64] ==> [/usr/lib64]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib64/crtbegin.o;/usr/lib64/crtend.o;/usr/lib64/crtn.o]
+  implicit dirs: [/usr/lib64]
+  implicit fwks: []
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/aj658/LLVM_passes_new/LLVM_passes/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local64/bin/gmake -f Makefile cmTC_26c45/fast && /usr/local64/bin/gmake  -f CMakeFiles/cmTC_26c45.dir/build.make CMakeFiles/cmTC_26c45.dir/build
+gmake[1]: Entering directory '/usr/home/aj658/LLVM_passes_new/LLVM_passes/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_26c45.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++   -mabi=aapcs    -v -MD -MT CMakeFiles/cmTC_26c45.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_26c45.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_26c45.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local64/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+clang version 13.0.0
+Target: aarch64-unknown-freebsd14.0
+Thread model: posix
+InstalledDir: /usr/local64/llvm-morello/bin
+ (in-process)
+ "/usr/local64/llvm-morello/bin/clang-13" -cc1 -triple aarch64-unknown-freebsd14.0 -emit-obj -mrelax-all --mrelax-relocations -disable-free -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mframe-pointer=non-leaf -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu generic -target-feature +neon -target-feature +v8.2a -target-feature +fp-armv8 -target-feature +dotprod -target-feature +fullfp16 -target-feature +spe -target-feature +ssbs -target-feature +rcpc -target-feature +morello -target-feature -c64 -target-abi aapcs -mllvm -cheri-cap-table-abi=pcrel -fallow-half-arguments-and-returns -debugger-tuning=gdb -v -fcoverage-compilation-dir=/usr/home/aj658/LLVM_passes_new/LLVM_passes/build/CMakeFiles/CMakeTmp -resource-dir /usr/local64/llvm-morello/lib/clang/13.0.0 -dependency-file CMakeFiles/cmTC_26c45.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_26c45.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/include/c++/v1 -fdeprecated-macro -fdebug-compilation-dir=/usr/home/aj658/LLVM_passes_new/LLVM_passes/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -morello-vararg=new -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_26c45.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local64/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 13.0.0 based upon LLVM 13.0.0git default target aarch64-unknown-freebsd14.0
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/include/c++/v1
+ /usr/local64/llvm-morello/lib/clang/13.0.0/include
+ /usr/include
+End of search list.
+Linking CXX executable cmTC_26c45
+/usr/local64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_26c45.dir/link.txt --verbose=1
+/usr/bin/c++ -mabi=aapcs   -v CMakeFiles/cmTC_26c45.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_26c45 
+clang version 13.0.0
+Target: aarch64-unknown-freebsd14.0
+Thread model: posix
+InstalledDir: /usr/local64/llvm-morello/bin
+ "/usr/local64/llvm-morello/bin/ld" --eh-frame-hdr -dynamic-linker /libexec/ld-elf.so.1 --enable-new-dtags -o cmTC_26c45 /usr/lib64/crt1.o /usr/lib64/crti.o /usr/lib64/crtbegin.o -L/usr/lib64 CMakeFiles/cmTC_26c45.dir/CMakeCXXCompilerABI.cpp.o --start-group -lc++ -lm -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed --end-group /usr/lib64/crtend.o /usr/lib64/crtn.o
+gmake[1]: Leaving directory '/usr/home/aj658/LLVM_passes_new/LLVM_passes/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/include/c++/v1]
+    add: [/usr/local64/llvm-morello/lib/clang/13.0.0/include]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/include/c++/v1] ==> [/usr/include/c++/v1]
+  collapse include dir [/usr/local64/llvm-morello/lib/clang/13.0.0/include] ==> [/usr/local64/llvm-morello/lib/clang/13.0.0/include]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/include/c++/v1;/usr/local64/llvm-morello/lib/clang/13.0.0/include;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/aj658/LLVM_passes_new/LLVM_passes/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/local64/bin/gmake -f Makefile cmTC_26c45/fast && /usr/local64/bin/gmake  -f CMakeFiles/cmTC_26c45.dir/build.make CMakeFiles/cmTC_26c45.dir/build]
+  ignore line: [gmake[1]: Entering directory '/usr/home/aj658/LLVM_passes_new/LLVM_passes/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_26c45.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++   -mabi=aapcs    -v -MD -MT CMakeFiles/cmTC_26c45.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_26c45.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_26c45.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local64/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [clang version 13.0.0]
+  ignore line: [Target: aarch64-unknown-freebsd14.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /usr/local64/llvm-morello/bin]
+  ignore line: [ (in-process)]
+  ignore line: [ "/usr/local64/llvm-morello/bin/clang-13" -cc1 -triple aarch64-unknown-freebsd14.0 -emit-obj -mrelax-all --mrelax-relocations -disable-free -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mframe-pointer=non-leaf -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu generic -target-feature +neon -target-feature +v8.2a -target-feature +fp-armv8 -target-feature +dotprod -target-feature +fullfp16 -target-feature +spe -target-feature +ssbs -target-feature +rcpc -target-feature +morello -target-feature -c64 -target-abi aapcs -mllvm -cheri-cap-table-abi=pcrel -fallow-half-arguments-and-returns -debugger-tuning=gdb -v -fcoverage-compilation-dir=/usr/home/aj658/LLVM_passes_new/LLVM_passes/build/CMakeFiles/CMakeTmp -resource-dir /usr/local64/llvm-morello/lib/clang/13.0.0 -dependency-file CMakeFiles/cmTC_26c45.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_26c45.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/include/c++/v1 -fdeprecated-macro -fdebug-compilation-dir=/usr/home/aj658/LLVM_passes_new/LLVM_passes/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -morello-vararg=new -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_26c45.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local64/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [clang -cc1 version 13.0.0 based upon LLVM 13.0.0git default target aarch64-unknown-freebsd14.0]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/include/c++/v1]
+  ignore line: [ /usr/local64/llvm-morello/lib/clang/13.0.0/include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [Linking CXX executable cmTC_26c45]
+  ignore line: [/usr/local64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_26c45.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++ -mabi=aapcs   -v CMakeFiles/cmTC_26c45.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_26c45 ]
+  ignore line: [clang version 13.0.0]
+  ignore line: [Target: aarch64-unknown-freebsd14.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /usr/local64/llvm-morello/bin]
+  link line: [ "/usr/local64/llvm-morello/bin/ld" --eh-frame-hdr -dynamic-linker /libexec/ld-elf.so.1 --enable-new-dtags -o cmTC_26c45 /usr/lib64/crt1.o /usr/lib64/crti.o /usr/lib64/crtbegin.o -L/usr/lib64 CMakeFiles/cmTC_26c45.dir/CMakeCXXCompilerABI.cpp.o --start-group -lc++ -lm -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed --end-group /usr/lib64/crtend.o /usr/lib64/crtn.o]
+    arg [/usr/local64/llvm-morello/bin/ld] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/libexec/ld-elf.so.1] ==> ignore
+    arg [--enable-new-dtags] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_26c45] ==> ignore
+    arg [/usr/lib64/crt1.o] ==> obj [/usr/lib64/crt1.o]
+    arg [/usr/lib64/crti.o] ==> obj [/usr/lib64/crti.o]
+    arg [/usr/lib64/crtbegin.o] ==> obj [/usr/lib64/crtbegin.o]
+    arg [-L/usr/lib64] ==> dir [/usr/lib64]
+    arg [CMakeFiles/cmTC_26c45.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [--start-group] ==> ignore
+    arg [-lc++] ==> lib [c++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [--end-group] ==> ignore
+    arg [/usr/lib64/crtend.o] ==> obj [/usr/lib64/crtend.o]
+    arg [/usr/lib64/crtn.o] ==> obj [/usr/lib64/crtn.o]
+  collapse library dir [/usr/lib64] ==> [/usr/lib64]
+  implicit libs: [c++;m;gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib64/crtbegin.o;/usr/lib64/crtend.o;/usr/lib64/crtn.o]
+  implicit dirs: [/usr/lib64]
+  implicit fwks: []
+
+

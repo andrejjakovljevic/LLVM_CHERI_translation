@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -mabi=aapcs  -Wl,-z,origin  -Wl,-O3 -Wl,--gc-sections -shared  -o HelloPass.so CMakeFiles/HelloPass.dir/HelloPass.cpp.o  -Wl,-rpath,"\$ORIGIN/../lib:/usr/local64/llvm-morello/lib" /usr/local64/llvm-morello/lib/libLLVM-13git.so 
