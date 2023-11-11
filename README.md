@@ -2,7 +2,7 @@
 
 ## About
 
-This repository contains code dedicated to translating LLVM intermediate representation (IR) from a hybrid capability model to a pure capability model, supported by CHERI. 
+This repository contains code dedicated to translating LLVM intermediate representation (IR) from a hybrid capability model to a pure capability model, supported by CHERI (more details can be found [here](https://www.cl.cam.ac.uk/research/security/ctsrd/cheri/)). 
 The implementation addresses the crucial step of adapting software originally developed for a non-capability, traditional architecture to one that aligns with CheriABI.
 The primary functionality centers around transforming LLVM IR code, ensuring compatibility with CheriABI's pure capability model. 
 This involves handling the intricacies of hybrid capability structures and adapting them to a format suitable for CheriABI.
