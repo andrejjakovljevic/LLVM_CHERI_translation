@@ -33,3 +33,9 @@ cc -mabi=purecap hello_purecap.c -o a.out
 ```
 
 Which you can then run on CHERI.
+
+To fully utilize the translation capability of this project, you can build the fork of clang which can be found [here](https://github.com/andrejjakovljevic/llvm-morello-for-translation). 
+The custom clang is used for compilation with the following command:
+```
+[PATH TO THE CLANG PROJECT]/build/bin/clang -fno-discard-value-names -O0 -S -emit-llvm -Wno-override-module -Wno-pointer-sign -Wno-unknown-attributes -Wno-implicit-int -fgnu89-inline [INPUT .c FILE] -o [OUPUT .ll FILE]
+```
